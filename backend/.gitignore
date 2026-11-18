@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build and coverage output
+dist/
+coverage/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Runtime and tooling
+*.tsbuildinfo
+.cache/
+.tmp/
+tmp/
+
+# Docker
+postgres_data/
