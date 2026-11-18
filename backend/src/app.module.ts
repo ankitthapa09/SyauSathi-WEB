@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { LoggerModule } from 'nestjs-pino';
 import { AppController } from './app.controller';
 import { validateEnvironment } from './config/environment';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { validateEnvironment } from './config/environment';
         synchronize: false,
       }),
     }),
+    AuthModule,
   ],
   controllers: [AppController],
 })
